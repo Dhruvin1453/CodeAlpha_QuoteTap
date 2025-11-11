@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading quote..."
+            android:textSize="20sp"
+            android:textColor="#212121"
+            android:gravity="center"
+            android:padding="40dp"
+            android:fontFamily="sans-serif-medium" />
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Author"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:layout_marginTop="5dp"
+
+            android:gravity="center" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnNewQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Quote"
+        android:layout_marginTop="32dp"
+        android:padding="12dp"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium" />
+</LinearLayout>
